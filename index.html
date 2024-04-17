@@ -12,12 +12,14 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            background: #ffffffe1;
         }
         header{
             display: flex;
             
             align-items: center;
             padding: 10px 2%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
         
         #img{
@@ -37,11 +39,57 @@
             
         }
        #u1{
-        margin-left: 38%;
+        margin-left: 30%;
        }
        li:hover{
         color: rgb(255, 136, 0);
+        cursor: pointer;
        }
+       h1{
+        margin-top: 60px;
+        text-align: center;
+       }
+       h4,p{
+        margin: 10px;
+       }
+
+       span.new{
+    display: inline-block;
+    text-align: center;
+     width: 450px;
+    height: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    padding: 10px 10px 20px;
+    margin: 20px;
+    background-color: white;
+    
+   }
+
+   .box{
+    display: flex;
+    justify-content: center;
+   }
+
+   .btn{
+    width: 25%;
+    padding: 8px;
+    background-color: #000000;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.2s;
+    cursor: pointer;
+   }
+   .btn:hover{
+    color: #000000;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    
+   }
 
     </style>
 </head>
@@ -50,7 +98,7 @@
             <img  id="img" src="https://logos-world.net/wp-content/uploads/2020/07/Xiaomi-Logo-700x394.png" alt="logo">
         <nav class="nav">
             <ul>
-                <li></li>
+                <li>Store</li>
                 <li>Phone</li>
                 <li>TV & Smart Home</li>
                 <li>Tablet</li>
@@ -65,11 +113,35 @@
                 search
                 </span></li>
                 <li><span class="material-symbols-outlined">
+                    shopping_cart
+                    </span></li>
+                <li><span class="material-symbols-outlined">
                     person
                     </span></li>
         </ul>
     </header>
-    <hr>
+   <main>
+    <h1>Exclusive Offers</h1>
+    <div class="box">
+        <span class = "new"><img style="width: 100%; margin-bottom: 20px;" src="https://i03.appmifile.com/36_operator_in/19/02/2024/a2db114bfb3eb919b734b44b80d2933a.jpg?thumb=1&w=420&f=webp&q=85" alt="">
+            <h4>Smart Bundles</h4>
+            <p>Unlock Unbeatable Deals</p>
+            <button class="btn">Learn More</button></span>
+    
+        <span class = "new"><img style="width: 100%; margin-bottom: 20px" src="https://i03.appmifile.com/781_operator_in/19/02/2024/872bcb906dec5d442ca9a961a835a938.jpg?thumb=1&w=420&f=webp&q=85" alt="">
+            <h4>Bestselling Smartphones</h4>
+            <p>Elevate Your SmartPhone Experience</p>
+            <button class="btn">Learn More</button></span>
+    
+            <span class = "new"><img style="width: 100%; margin-bottom: 20px" src="https://i03.appmifile.com/346_operator_in/19/02/2024/d4bb56bb3e434c120e028f282bbe4418.jpg?thumb=1&w=420&f=webp&q=85" alt="">
+                <h4>Xiaomi Smart Home Products</h4>
+                <p>Smarter Technology, Smarter Living</p>
+                <button class="btn">Learn More</button></span>
+
+
+    </div>
+    
+   </main>
 
 </body>
 </html>
